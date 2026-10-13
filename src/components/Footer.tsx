@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { ArrowUp, Code2 } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
@@ -10,7 +11,11 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState<number>(2025);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer
