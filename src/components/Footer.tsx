@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import { ArrowUp, Code2 } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
+
+const emptySubscribe = () => () => {};
 
 export default function Footer() {
   const { personal, socialPlaceholders } = portfolioData;
@@ -11,11 +13,11 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const [currentYear, setCurrentYear] = useState<number>(2025);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = useSyncExternalStore(
+    emptySubscribe,
+    () => new Date().getFullYear(),
+    () => 2025
+  );
 
   return (
     <footer
