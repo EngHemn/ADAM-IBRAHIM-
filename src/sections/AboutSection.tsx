@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GraduationCap, Languages, Compass, Award } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import { portfolioData } from "@/data/portfolio";

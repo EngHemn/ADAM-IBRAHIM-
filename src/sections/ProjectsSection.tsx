@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Layout, ExternalLink, Code2, Home, CheckCircle2 } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import { portfolioData } from "@/data/portfolio";

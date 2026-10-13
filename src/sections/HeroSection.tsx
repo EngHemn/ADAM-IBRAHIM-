@@ -3,8 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Mail, ArrowRight, Download, Terminal, Sparkles } from "lucide-react";
+import { MapPin, Mail, ArrowRight, Terminal, Sparkles } from "lucide-react";
 import ThreeHeroSceneWrapper from "@/components/ThreeHeroSceneWrapper";
 import { portfolioData } from "@/data/portfolio";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";

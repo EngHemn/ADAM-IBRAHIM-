@@ -2,8 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Briefcase, Calendar, Building2, MapPin, CheckCircle2 } from "lucide-react";
+import { Calendar, Building2, MapPin, CheckCircle2 } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import { portfolioData } from "@/data/portfolio";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
@@ -66,7 +65,7 @@ export default function ExperienceSection() {
           <div className="timeline-spine absolute left-[11px] sm:left-[19px] top-4 bottom-4 w-[2px] bg-gradient-to-b from-[#bbe9db] via-[#aeccc6]/40 to-[#757a79]/20" />
 
           <div className="flex flex-col gap-10 sm:gap-12">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <div
                 key={`${exp.organization}-${exp.role}`}
                 className="timeline-card relative group"

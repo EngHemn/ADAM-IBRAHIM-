@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Mail, Phone, MapPin, Send, Copy, Check, ArrowUpRight } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import { portfolioData } from "@/data/portfolio";
